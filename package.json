@@ -1,0 +1,28 @@
+{
+  "name": "vite_bronze",
+  "version": "1.0.0",
+  "description": "vite bronze",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --watch",
+    "start": "nodemon ./vite/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwenj/vite_bronze.git"
+  },
+  "author": "wwenj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wwenj/vite_bronze/issues"
+  },
+  "homepage": "https://github.com/wwenj/vite_bronze#readme",
+  "dependencies": {
+    "koa": "^2.13.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.4",
+    "nodemon": "^2.0.15"
+  }
+}
