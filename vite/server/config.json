@@ -1,5 +1,4 @@
-// vite 配置
-module.exports = {
+{
     "root": "/Users/wangwenjian/Desktop/Private/code/viteHtml/src",
     "base": "/",
     "publicDir": "/Users/wangwenjian/Desktop/Private/code/viteHtml/src/public",

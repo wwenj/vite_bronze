@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOA</title>
+    <title>Vite</title>
 </head>
+
 <body>
     <h1>KOA</h1>
+    <button id="button1">按钮</button>
+    <script>
+        let ws = new WebSocket("ws://localhost:3001");
+        ws.addEventListener('open', function (event) {
+            ws.send('Hello Ws Server!');
+        });
+        ws.addEventListener('close', function (event) {
+            // ws.send('ws close!');
+            console.log('ws close!')
+        });
+        ws.addEventListener('message', function (event) {
+            let data = event.data;
+            try{
+                console.log(JSON.parse(data))
+            }catch{
+                console.log(data)
+            }
+        });
+        let dom = document.querySelector('#button1')
+        dom.addEventListener('click', function (event) {
+            console.log('click')
+            ws.send('click');
+        })
+    </script>
 </body>
+
 </html>
