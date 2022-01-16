@@ -6,9 +6,13 @@
   color: #2c3e50;
   margin-top: 60px;
 }
-.aaa{
-  color:yellow;
+
+.title {
+  font-size: 30px;
+  color: red;
 }
-.img{
-  width: 500px;
+
+.img {
+  width: 200px;
+  font-size: 1111111;
 }

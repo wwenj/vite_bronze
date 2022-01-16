@@ -3,7 +3,7 @@ import chokidar from 'chokidar';
 
 // 创建webSocket
 export function createWebSocketServer(config) {
-    const wss = new WebSocketServer({ port: config.server.port });
+    const wss = new WebSocketServer({ port: 8888 });
     wss.on('connection', function connection(socket) {
         socket.send(JSON.stringify({ type: 'connected' }))
         socket.on('message', function message(data) {

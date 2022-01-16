@@ -2,7 +2,7 @@ import path from 'path'
 export default {
     root: path.resolve('./src'),
     server: {
-        "port": 3001,
+        "port": 3000,
         "fs": {
             "strict": true,
             "allow": [
